@@ -79,7 +79,7 @@ nav{
     left: 0;
     width: 100%;
     padding: 1rem 0;
-    z-index: 30;
+    z-index: 40;
     background: linear-gradient(to bottom, rgba( 0, 0, 0, 0.05), transparent)
 }
 
@@ -88,6 +88,48 @@ nav .container{
     justify-content: space-between;
     align-items: center;
 }
+
+.navigation {
+  display: none;
+}
+
+.navigation.active {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(1, 1, 1, 0.5);
+}
+
+
+.navigation .navigation-items a {
+  color: grey;
+  font-size: 1.3em;
+  margin: 20px;
+  text-decoration: none;
+}
+
+.navigation .navigation-items a:before {
+  background: #fff;
+}
+
+.navigation.active .navigation-items {
+  background-color: #222;
+  width: 600px;
+  margin: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+}
+
+
 
 .logo{
     color: #fff;
@@ -101,16 +143,35 @@ nav .container{
     font-weight: 300;
 }
 
-.hamburger-menu{
+/* .hamburger-menu{
     width: 1.55rem;
     height: 1.5rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+} */
+
+.hamburger-menu {
+  background: url(menu.png) no-repeat;
+  background-size: 30px;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.bar{
+.hamburger-menu.active {
+  z-index: 999;
+  background: url(close.png) no-repeat;
+  background-size: 25px;
+  background-position: center;
+  transition: 0.3s ease;
+}
+
+/* ? previous hamburger css */
+/* .bar{
     position: relative;
     width: 1.2rem; 
     height: 3px;
@@ -134,7 +195,7 @@ nav .container{
 
 .bar:after{
     transform: translateY(8px);
-}
+} */
 
 .big-title{
     position: absolute;
