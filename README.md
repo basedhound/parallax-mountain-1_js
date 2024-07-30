@@ -1,9 +1,11 @@
 <div align="center">
-    <a href="https://parallax-1-fv.netlify.app/" target="_blank">
-      <img src="/design/preview.webp" alt="Project Banner">
-    </a>
-  <h3 align="center">Parallax #1 - Mountain</h3>
+    <a href="https://parallax-1-fv.netlify.app"" target="_blank">
+      <img src="design/preview.webp" alt="Project Banner">
+    </a>
+  <h3 align="center">iPhone 15 Website</h3>
 </div>
+
+
 ##  <br /> 📋 <a name="table">Table of Contents</a>
 
 - ✨ [Introduction](#introduction)
